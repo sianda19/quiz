@@ -1,0 +1,52 @@
+.question {
+  font-family: Karla, sans-serif;
+  color: #293264;
+  padding: 1.5rem;
+  border-bottom: 0.8px solid #dbdef0;
+}
+
+.question:nth-of-type(1) {
+  padding-top: 3rem;
+}
+
+.question h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.question button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  color: #293264;
+  border: 1px solid #293264;
+  margin: 1rem 2rem 0 0;
+}
+
+.question button:hover {
+  cursor: pointer;
+}
+
+.question button:disabled:hover {
+  cursor: default;
+}
+
+.question button:disabled {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+@media screen and (min-width: 1300px) {
+  .question:nth-of-type(1) {
+    padding-top: 5rem;
+  }
+  .question h2 {
+    font-size: 1.75rem;
+  }
+  .question button {
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 12px;
+  }
+}

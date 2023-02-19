@@ -1,0 +1,97 @@
+.homepage {
+  height: 100vh;
+  font-family: Inter, sans-serif;
+  display: flex;
+  color: #293264;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage .top {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.homepage .bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.homepage div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.homepage h2 {
+  margin: 0;
+  font-family: Karla, sans-serif;
+  font-size: 4rem;
+}
+
+.homepage p {
+  font-size: 2rem;
+}
+
+button {
+  width: fit-content;
+  align-self: center;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  color: #f5f7fb;
+  background-color: #4d5b9e;
+  border-radius: 15px;
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.homepage button:hover {
+  cursor: pointer;
+  background-color: #293264;
+}
+
+@media screen and (max-width: 900px) {
+  .homepage h2 {
+    font-size: 2.5rem;
+  }
+  .homepage p,
+  button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    /* border-radius: 7.5px; */
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .homepage div {
+    padding: 0 1rem;
+  }
+  .homepage h2 {
+    font-size: 2rem;
+  }
+  .homepage p,
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .homepage div {
+    padding: 0 1rem;
+  }
+  .homepage h2 {
+    font-size: 4.5rem;
+  }
+  .homepage p {
+    font-size: 2.5rem;
+  }
+  button {
+    font-size: 2rem;
+    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+    border-radius: 23px;
+  }
+}
